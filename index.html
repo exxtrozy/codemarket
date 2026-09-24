@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>CodeMarket — цифровые коды</title>
+	<style>
+		:root { --bg:#0b1020; --card:#131b31; --muted:#9aa7c2; --accent:#7c5cff; --accent2:#23d5ab; --text:#f5f7ff; }
+		* { box-sizing:border-box; }
+		body { margin:0; font-family:Inter,Arial,sans-serif; background:linear-gradient(135deg,#0b1020,#121b35); color:var(--text); }
+		header { max-width:1120px; margin:auto; padding:24px 24px 10px; display:flex; justify-content:space-between; align-items:center; }
+		.logo { font-size:24px; font-weight:800; letter-spacing:-1px; }.logo span { color:var(--accent2); }
+		nav a { color:var(--muted); text-decoration:none; margin-left:24px; font-size:14px; }
+		nav a:hover { color:white; }
+		.hero { max-width:1120px; margin:0 auto; padding:82px 24px 70px; display:grid; grid-template-columns:1.15fr .85fr; gap:60px; align-items:center; }
+		h1 { font-size:clamp(42px,6vw,72px); line-height:1.02; margin:0 0 22px; letter-spacing:-3px; }
+		h1 span { color:var(--accent2); }.hero p { color:var(--muted); font-size:18px; line-height:1.6; max-width:550px; }
+		.buttons { display:flex; gap:14px; margin-top:30px; }.btn { display:inline-block; padding:14px 22px; border-radius:10px; text-decoration:none; font-weight:700; color:white; background:var(--accent); }.btn.alt { background:#202b48; }
+		.preview { background:var(--card); border:1px solid #263352; padding:26px; border-radius:22px; box-shadow:0 20px 70px #0004; transform:rotate(2deg); }
+		.preview-top { display:flex; justify-content:space-between; color:var(--muted); font-size:13px; margin-bottom:28px; }.code { background:#0c1326; border-radius:12px; padding:22px; font-family:monospace; font-size:17px; color:#b7c7ff; }.price { font-size:30px; font-weight:800; margin-top:22px; }
+		section { max-width:1120px; margin:auto; padding:34px 24px 80px; } h2 { font-size:32px; margin-bottom:28px; }
+		.grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }.card { background:var(--card); border:1px solid #263352; border-radius:16px; padding:24px; }.card h3 { margin:8px 0 10px; }.card p { color:var(--muted); line-height:1.5; font-size:14px; }.tag { color:var(--accent2); font-size:13px; font-weight:700; }.buy { margin-top:15px; width:100%; border:0; cursor:pointer; padding:12px; color:white; background:#26355e; border-radius:8px; font-weight:700; }.buy:hover { background:var(--accent); }
+		footer { border-top:1px solid #263352; padding:24px; text-align:center; color:var(--muted); font-size:13px; }
+		@media(max-width:750px) { header { padding-top:18px; } nav { display:none; }.hero { grid-template-columns:1fr; padding-top:55px; gap:30px; }.preview { transform:none; }.grid { grid-template-columns:1fr; } }
+	</style>
+</head>
+<body>
+	<header><div class="logo">Code<span>Market</span></div><nav><a href="#catalog">Каталог</a><a href="#about">Как это работает</a><a href="#contacts">Поддержка</a></nav></header>
+	<main>
+		<section class="hero">
+			<div><div class="tag">ЦИФРОВЫЕ ТОВАРЫ МГНОВЕННО</div><h1>Коды, которые<br><span>работают.</span></h1><p>Лицензионные ключи для игр, программ и подписок. Безопасная оплата и автоматическая доставка на почту.</p><div class="buttons"><a class="btn" href="#catalog">Смотреть каталог</a><a class="btn alt" href="#about">Подробнее</a></div></div>
+			<div class="preview"><div class="preview-top"><span>Популярный ключ</span><span>● В наличии</span></div><div class="code">XXXX-XXXX-XXXX<br>XXXX-XXXX-XXXX</div><div class="price">от 499 ₽</div><p>Активация за 1 минуту</p></div>
+		</section>
+		<section id="catalog"><h2>Популярные категории</h2><div class="grid">
+			<article class="card"><div class="tag">ИГРЫ</div><h3>Игровые ключи</h3><p>Steam, PlayStation, Xbox и другие платформы по выгодным ценам.</p><button class="buy">Выбрать</button></article>
+			<article class="card"><div class="tag">СЕРВИСЫ</div><h3>Подписки</h3><p>Музыка, кино, облачные сервисы и премиум-функции.</p><button class="buy">Выбрать</button></article>
+			<article class="card"><div class="tag">СОФТ</div><h3>Программы</h3><p>Лицензии для работы, учёбы и творчества на любой срок.</p><button class="buy">Выбрать</button></article>
+		</div></section>
+		<section id="about"><h2>Почему CodeMarket?</h2><div class="grid"><article class="card"><h3>⚡ Быстро</h3><p>Получите код сразу после оплаты.</p></article><article class="card"><h3>🔒 Надёжно</h3><p>Только проверенные поставщики и защищённые платежи.</p></article><article class="card"><h3>💬 Поддержка</h3><p>Поможем активировать покупку 24/7.</p></article></div></section>
+	</main>
+	<footer id="contacts">© 2024 CodeMarket · Поддержка: support@codemarket.ru</footer>
+</body>
+</html>
+
